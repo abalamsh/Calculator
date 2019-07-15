@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F23D274522D25B220033EF58 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D274422D25B220033EF58 /* CustomButton.swift */; };
+		F266E4C322DD01050060D604 /* BrainCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266E4C222DD01050060D604 /* BrainCalculator.swift */; };
 		F2FDDDA522C915B600213154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDDDA422C915B600213154 /* AppDelegate.swift */; };
 		F2FDDDA722C915B600213154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDDDA622C915B600213154 /* ViewController.swift */; };
 		F2FDDDAA22C915B600213154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FDDDA822C915B600213154 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		F23D274422D25B220033EF58 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F266E4C222DD01050060D604 /* BrainCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainCalculator.swift; sourceTree = "<group>"; };
 		F2FDDDA122C915B600213154 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FDDDA422C915B600213154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2FDDDA622C915B600213154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				F2FDDDA622C915B600213154 /* ViewController.swift */,
+				F266E4C222DD01050060D604 /* BrainCalculator.swift */,
 				F2FDE73522D3AA4F002420F8 /* ViewFront.swift */,
 				F23D274422D25B220033EF58 /* CustomButton.swift */,
 				F2FDDDA822C915B600213154 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F266E4C322DD01050060D604 /* BrainCalculator.swift in Sources */,
 				F2FDDDA722C915B600213154 /* ViewController.swift in Sources */,
 				F2FDDDA522C915B600213154 /* AppDelegate.swift in Sources */,
 				F2FDE73622D3AA4F002420F8 /* ViewFront.swift in Sources */,
