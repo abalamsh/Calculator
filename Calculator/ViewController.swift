@@ -13,16 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var Label: UILabel!
     
     let Brain = BrainCalculator()
+    
+    
     @IBAction func ButtonsAction(_ sender: UIButton) {
         if(Label.text == "0"){ Label.text = ""}
         Label.text! +=  String(sender.tag)           }
     
     
-    var lastOperation = ""
-    var lastNumber = 0.0
+    
     @IBAction func OperationsButton(_ sender: UIButton) {
-        lastNumber = Double(Label.text!)!
-        lastOperation = sender.titleLabel!.text!        }
+        Brain.Add(Number: Double(Label.text!)!, With: Character(sender.titleLabel!.text!))
+        Label.text="0"
+              }
     
     
     

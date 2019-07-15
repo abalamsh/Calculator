@@ -325,6 +325,9 @@
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="OperationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHm-kp-5k6"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

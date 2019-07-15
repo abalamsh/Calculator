@@ -9,6 +9,13 @@
 import Foundation
 class BrainCalculator{
     
+    func Add(Number : Double , With Operation : Character){
+        NumWithOpArray.append(CalcElement(Num : Number , Op : Operation))
+        
+    }
     
+    typealias CalcElement = (Num : Double , Op : Character)
+    
+    private var NumWithOpArray : [CalcElement]=[]
     
 }
