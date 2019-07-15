@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Label: UILabel!
     
+    let Brain = BrainCalculator()
     @IBAction func ButtonsAction(_ sender: UIButton) {
         if(Label.text == "0"){ Label.text = ""}
         Label.text! +=  String(sender.tag)           }
