@@ -52,8 +52,14 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func MinusPlus(_ sender: UIButton) {
+        Label.text = String(Double(Label.text!)! * -1)
+    }
     
     
+    @IBAction func Percent(_ sender: UIButton) {
+        Label.text = String(Double(Label.text!)! / 100 )
+    }
     
     
     

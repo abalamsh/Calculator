@@ -60,6 +60,9 @@
                                                         <state key="normal" title="±">
                                                             <color key="titleColor" white="1" alpha="0.70224208050000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="MinusPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="58j-OV-aER"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7I-f9-Krs" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="187.66666666666666" y="0.0" width="85.666666666666657" height="85.666666666666671"/>
@@ -72,6 +75,9 @@
                                                         <state key="normal" title="%">
                                                             <color key="titleColor" white="1" alpha="0.70224208050000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="Percent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KhH-AH-ybo"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwC-Hm-3y4" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="281.33333333333331" y="0.0" width="85.666666666666686" height="85.666666666666671"/>
