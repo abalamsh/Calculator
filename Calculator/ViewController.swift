@@ -17,19 +17,48 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonsAction(_ sender: UIButton) {
         if(Label.text == "0"){ Label.text = ""}
-        Label.text! +=  String(sender.tag)           }
+        
+        if sender.tag == -1 {
+            if (!Label.text!.contains(".")){
+                Label.text! += "."
+            }
+        }else{
+         Label.text! +=  String(sender.tag)
+        }
+                  }
     
     
     
     @IBAction func OperationsButton(_ sender: UIButton) {
         Brain.Add(Number: Double(Label.text!)!, With: Character(sender.titleLabel!.text!))
-        Label.text="0"
+        if sender.titleLabel!.text! == "="{
+            Label.text = Brain.result()
+            Brain.Restart()
+        }else{
+            Label.text="0"
+        }
               }
     
     
     
     
-    override var preferredStatusBarStyle: UIStatusBarStyle{ return .lightContent }}
+    override var preferredStatusBarStyle: UIStatusBarStyle{ return .lightContent }
+    
+    
+    
+    @IBAction func AcButton(_ sender: UIButton) {
+        Label.text = "0"
+        Brain.Restart()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
 
 
 

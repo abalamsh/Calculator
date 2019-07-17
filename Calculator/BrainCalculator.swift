@@ -9,9 +9,17 @@
 import Foundation
 class BrainCalculator{
     
+    func Restart(){
+        NumWithOpArray = []
+    }
     func Add(Number : Double , With Operation : Character){
         NumWithOpArray.append(CalcElement(Num : Number , Op : Operation))
         
+    }
+    func result() -> String {
+        CalculateMultiAndDivBy()
+        CalculateMinus()
+        return String (NumWithOpArray.reduce(0,{$0 + $1.Num}))
     }
     
     typealias CalcElement = (Num : Double , Op : Character)
@@ -33,11 +41,26 @@ class BrainCalculator{
                  NumWithOpArray.remove(at: index)
                  NumWithOpArray.remove(at: index)
                  NumWithOpArray.insert(newCalc, at: index)
+                 CalculateMultiAndDivBy()
                  break
                                                }
                                                           }
                                   }
     
+    
+    func CalculateMinus(){
+        for (index , current ) in NumWithOpArray.enumerated(){
+            if(current.Op == "-" ){
+                let afterCurrent = NumWithOpArray[index + 1]
+                let newCalc : CalcElement = CalcElement(Num : current.Num - afterCurrent.Num , Op : "+")
+                NumWithOpArray.remove(at: index)
+                NumWithOpArray.remove(at: index)
+                NumWithOpArray.insert(newCalc, at: index)
+                CalculateMinus()
+                break
+                                  }
+                                                             }
+                            }
 
 
 

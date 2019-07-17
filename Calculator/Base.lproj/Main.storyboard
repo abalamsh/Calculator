@@ -45,6 +45,9 @@
                                                         <state key="normal" title="AC">
                                                             <color key="titleColor" white="1" alpha="0.70224208047945202" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="AcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3I-ZS-WEL"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k1-Ai-YPq" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="93.666666666666686" y="0.0" width="86" height="85.666666666666671"/>
@@ -300,7 +303,7 @@
                                                             <action selector="ButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hep-j1-aO6"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxq-q1-zbo" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxq-q1-zbo" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="187.66666666666666" y="0.0" width="85.666666666666657" height="85.666666666666671"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.20438249143835616" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -312,6 +315,9 @@
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" white="1" alpha="0.70224208050000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="ButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZn-iA-w07"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-JG-CRw" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="281.33333333333331" y="0.0" width="85.666666666666686" height="85.666666666666671"/>
