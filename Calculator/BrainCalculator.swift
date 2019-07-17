@@ -18,4 +18,33 @@ class BrainCalculator{
     
     private var NumWithOpArray : [CalcElement]=[]
     
+    
+    func CalculateMultiAndDivBy(){
+        for (index , one ) in NumWithOpArray.enumerated(){
+            if(one.Op == "x" || one.Op == "/"){
+                let afterCurrent = NumWithOpArray[index + 1]
+                var newCalc : CalcElement!
+                if (one.Op == "x" ){
+                    newCalc = CalcElement(Num : one.Num * afterCurrent.Num , Op : afterCurrent.Op)
+                                   }
+                else if (one.Op == "/" ){
+                    newCalc = CalcElement(Num : one.Num / afterCurrent.Num , Op : afterCurrent.Op)
+                                        }
+                 NumWithOpArray.remove(at: index)
+                 NumWithOpArray.remove(at: index)
+                 NumWithOpArray.insert(newCalc, at: index)
+                 break
+                                               }
+                                                          }
+                                  }
+    
+
+
+
+
+
+
+
+
+
 }
