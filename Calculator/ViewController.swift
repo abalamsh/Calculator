@@ -27,9 +27,14 @@ class ViewController: UIViewController {
         }
                   }
     
-    
+    var lastOp : Character = " "
+    var lastNum : Double = 0
     
     @IBAction func OperationsButton(_ sender: UIButton) {
+         lastOp = Character(sender.titleLabel!.text!)
+         lastNum = Double(Label.text!)!
+        print(lastOp)
+        print(lastNum)
         Brain.Add(Number: Double(Label.text!)!, With: Character(sender.titleLabel!.text!))
         if sender.titleLabel!.text! == "="{
             Label.text = Brain.result()
@@ -48,6 +53,9 @@ class ViewController: UIViewController {
     
     @IBAction func AcButton(_ sender: UIButton) {
         Label.text = "0"
+        lastOp = " "
+        lastNum = 0
+        
         Brain.Restart()
     }
     
@@ -58,7 +66,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func Percent(_ sender: UIButton) {
-        Label.text = String(Double(Label.text!)! / 100 )
+        if(lastOp == "+"){
+            Label.text = String (lastNum * (Double(Label.text!)!/100.0) )
+        }else if(lastOp == "-"){
+            Label.text = String (lastNum * (Double(Label.text!)!/100.0)  )
+        }
+        else{
+            Label.text = String(Double(Label.text!)! / 100 )
+        }
+        
     }
     
     
