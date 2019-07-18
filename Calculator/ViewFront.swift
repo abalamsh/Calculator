@@ -19,7 +19,7 @@ class ViewFront : UIView {
         
         let layer : CAGradientLayer = CAGradientLayer()
         layer.frame=CGRect(x: 0, y: 0, width: self.frame.size.width,
-                           height: self.frame.size.height)
+        height: self.frame.size.height)
         layer.startPoint = CGPoint(x: 0, y: 0.1)
         layer.endPoint = CGPoint(x: 0, y: 0.7)
         layer.colors=[UIColor.black.cgColor,UIColor.red.cgColor]
